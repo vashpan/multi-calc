@@ -10,6 +10,7 @@
 		719A6FBA223D3B090041C010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A6FB9223D3B090041C010 /* AppDelegate.swift */; };
 		719A6FBC223D3B090041C010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719A6FBB223D3B090041C010 /* Assets.xcassets */; };
 		719A6FBF223D3B090041C010 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 719A6FBD223D3B090041C010 /* MainMenu.xib */; };
+		719A6FC8223D974D0041C010 /* CalcsRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A6FC7223D974D0041C010 /* CalcsRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		719A6FBE223D3B090041C010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		719A6FC0223D3B090041C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719A6FC1223D3B090041C010 /* Calculer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculer.entitlements; sourceTree = "<group>"; };
+		719A6FC7223D974D0041C010 /* CalcsRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcsRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				719A6FB9223D3B090041C010 /* AppDelegate.swift */,
+				719A6FC7223D974D0041C010 /* CalcsRunner.swift */,
 				719A6FBD223D3B090041C010 /* MainMenu.xib */,
 				719A6FBB223D3B090041C010 /* Assets.xcassets */,
 				719A6FC0223D3B090041C010 /* Info.plist */,
@@ -92,6 +95,11 @@
 				TargetAttributes = {
 					719A6FB5223D3B080041C010 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -130,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719A6FC8223D974D0041C010 /* CalcsRunner.swift in Sources */,
 				719A6FBA223D3B090041C010 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +276,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Calculer/Calculer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DS5SGYDG6;
@@ -286,7 +294,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Calculer/Calculer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DS5SGYDG6;

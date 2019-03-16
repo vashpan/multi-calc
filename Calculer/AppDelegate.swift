@@ -38,14 +38,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             // Unfortunately advice in deprecation is not really,
             self.statusBarItem?.popUpMenu(self.menu)
         } else {
-            
-            // TODO: Add logic to spawn new calculators
-            NSLog("Spawn a new calculator!")
+            CalcsRunner.shared.startNewCalculator()
         }
     }
     
     @IBAction func cloaseAllCalculators(_ sender: Any) {
-        
+        CalcsRunner.shared.closeAllRunningCalculators()
     }
 }
 
