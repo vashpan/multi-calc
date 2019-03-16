@@ -52,8 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				719A6FB9223D3B090041C010 /* AppDelegate.swift */,
-				719A6FBB223D3B090041C010 /* Assets.xcassets */,
 				719A6FBD223D3B090041C010 /* MainMenu.xib */,
+				719A6FBB223D3B090041C010 /* Assets.xcassets */,
 				719A6FC0223D3B090041C010 /* Info.plist */,
 				719A6FC1223D3B090041C010 /* Calculer.entitlements */,
 			);

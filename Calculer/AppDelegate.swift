@@ -10,18 +10,30 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
-
-
+    // MARK: Properties & outlets
+    @IBOutlet private weak var menu: NSMenu!
+    
+    private var statusBarItem: NSStatusItem?
+    
+    // MARK: NSApplicationDelegate implementation
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        
+        let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        statusBarItem.button?.image = NSImage(imageLiteralResourceName: "StatusBarIcon")
+        statusBarItem.menu = self.menu
+        statusBarItem.button?.target = self
+        statusBarItem.button?.action = #selector(statusBarClicked(_:))
+        
+        self.statusBarItem = statusBarItem
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    
+    // MARK: Actions
+    @IBAction func statusBarClicked(_ sender: Any) {
+        NSLog("Hello from status bar!")
     }
-
-
+    
+    @IBAction func cloaseAllCalculators(_ sender: Any) {
+        
+    }
 }
 
