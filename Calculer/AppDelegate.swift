@@ -20,16 +20,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         statusBarItem.button?.image = NSImage(imageLiteralResourceName: "StatusBarIcon")
-        statusBarItem.menu = self.menu
         statusBarItem.button?.target = self
         statusBarItem.button?.action = #selector(statusBarClicked(_:))
+        statusBarItem.button?.sendAction(on: [.leftMouseUp, .rightMouseUp])
         
         self.statusBarItem = statusBarItem
     }
     
     // MARK: Actions
-    @IBAction func statusBarClicked(_ sender: Any) {
-        NSLog("Hello from status bar!")
+    @IBAction func statusBarClicked(_ sender: NSStatusBarButton) {
+        guard let event = NSApp.currentEvent else {
+            return
+        }
+        
+        if event.type == .rightMouseUp {
+            // FIXME: Replace with something that's not deprecated
+            // Unfortunately advice in deprecation is not really,
+            self.statusBarItem?.popUpMenu(self.menu)
+        } else {
+            
+            // TODO: Add logic to spawn new calculators
+            NSLog("Spawn a new calculator!")
+        }
     }
     
     @IBAction func cloaseAllCalculators(_ sender: Any) {
