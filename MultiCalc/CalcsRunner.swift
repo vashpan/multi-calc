@@ -1,6 +1,6 @@
 //
 //  CalcsRunner.swift
-//  Calculer
+//  MultiCalc
 //
 //  Created by Konrad Kołakowski on 16/03/2019.
 //  Copyright © 2019 One Minute Games. All rights reserved.

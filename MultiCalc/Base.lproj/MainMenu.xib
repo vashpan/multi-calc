@@ -10,7 +10,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Calculer" customModuleProvider="target">
             <connections>
                 <outlet property="menu" destination="kdc-z0-6AF" id="paX-7d-Zpz"/>
@@ -26,7 +26,7 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="9py-xb-2aw"/>
-                <menuItem title="About Calculer" id="oet-s5-8c2">
+                <menuItem title="About MultiCalc" id="oet-s5-8c2">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="orderFrontStandardAboutPanel:" target="-3" id="6sB-y6-A0d"/>

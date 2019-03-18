@@ -14,12 +14,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		719A6FB6223D3B090041C010 /* Calculer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		719A6FB6223D3B090041C010 /* MultiCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719A6FB9223D3B090041C010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719A6FBB223D3B090041C010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719A6FBE223D3B090041C010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		719A6FC0223D3B090041C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		719A6FC1223D3B090041C010 /* Calculer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calculer.entitlements; sourceTree = "<group>"; };
+		719A6FC1223D3B090041C010 /* MultiCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultiCalc.entitlements; sourceTree = "<group>"; };
 		719A6FC7223D974D0041C010 /* CalcsRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcsRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,7 +37,7 @@
 		719A6FAD223D3B080041C010 = {
 			isa = PBXGroup;
 			children = (
-				719A6FB8223D3B090041C010 /* Calculer */,
+				719A6FB8223D3B090041C010 /* MultiCalc */,
 				719A6FB7223D3B090041C010 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,12 +45,12 @@
 		719A6FB7223D3B090041C010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				719A6FB6223D3B090041C010 /* Calculer.app */,
+				719A6FB6223D3B090041C010 /* MultiCalc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		719A6FB8223D3B090041C010 /* Calculer */ = {
+		719A6FB8223D3B090041C010 /* MultiCalc */ = {
 			isa = PBXGroup;
 			children = (
 				719A6FB9223D3B090041C010 /* AppDelegate.swift */,
@@ -58,17 +58,17 @@
 				719A6FBD223D3B090041C010 /* MainMenu.xib */,
 				719A6FBB223D3B090041C010 /* Assets.xcassets */,
 				719A6FC0223D3B090041C010 /* Info.plist */,
-				719A6FC1223D3B090041C010 /* Calculer.entitlements */,
+				719A6FC1223D3B090041C010 /* MultiCalc.entitlements */,
 			);
-			path = Calculer;
+			path = MultiCalc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		719A6FB5223D3B080041C010 /* Calculer */ = {
+		719A6FB5223D3B080041C010 /* MultiCalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 719A6FC4223D3B090041C010 /* Build configuration list for PBXNativeTarget "Calculer" */;
+			buildConfigurationList = 719A6FC4223D3B090041C010 /* Build configuration list for PBXNativeTarget "MultiCalc" */;
 			buildPhases = (
 				719A6FB2223D3B080041C010 /* Sources */,
 				719A6FB3223D3B080041C010 /* Frameworks */,
@@ -78,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = Calculer;
+			name = MultiCalc;
 			productName = Calculer;
-			productReference = 719A6FB6223D3B090041C010 /* Calculer.app */;
+			productReference = 719A6FB6223D3B090041C010 /* MultiCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 719A6FB1223D3B080041C010 /* Build configuration list for PBXProject "Calculer" */;
+			buildConfigurationList = 719A6FB1223D3B080041C010 /* Build configuration list for PBXProject "MultiCalc" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				719A6FB5223D3B080041C010 /* Calculer */,
+				719A6FB5223D3B080041C010 /* MultiCalc */,
 			);
 		};
 /* End PBXProject section */
@@ -279,13 +279,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DS5SGYDG6;
-				INFOPLIST_FILE = Calculer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MultiCalc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oneminutegames.Calculer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneminutegames.Multicalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -298,13 +298,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3DS5SGYDG6;
-				INFOPLIST_FILE = Calculer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MultiCalc/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oneminutegames.Calculer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneminutegames.Multicalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		719A6FB1223D3B080041C010 /* Build configuration list for PBXProject "Calculer" */ = {
+		719A6FB1223D3B080041C010 /* Build configuration list for PBXProject "MultiCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				719A6FC2223D3B090041C010 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		719A6FC4223D3B090041C010 /* Build configuration list for PBXNativeTarget "Calculer" */ = {
+		719A6FC4223D3B090041C010 /* Build configuration list for PBXNativeTarget "MultiCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				719A6FC5223D3B090041C010 /* Debug */,
