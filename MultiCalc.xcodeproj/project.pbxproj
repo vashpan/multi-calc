@@ -14,6 +14,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		714C11B122405CAF00B6FA5A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		714C11B222405CAF00B6FA5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		719A6FB6223D3B090041C010 /* MultiCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719A6FB9223D3B090041C010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719A6FBB223D3B090041C010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		719A6FAD223D3B080041C010 = {
 			isa = PBXGroup;
 			children = (
+				714C11B122405CAF00B6FA5A /* LICENSE */,
+				714C11B222405CAF00B6FA5A /* README.md */,
 				719A6FB8223D3B090041C010 /* MultiCalc */,
 				719A6FB7223D3B090041C010 /* Products */,
 			);
