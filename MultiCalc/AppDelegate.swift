@@ -52,8 +52,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         if event.type == .rightMouseUp {
-            // FIXME: Replace with something that's not deprecated
-            // Unfortunately advice in deprecation is not really,
             self.statusBarItem?.popUpMenu(self.menu)
         } else {
             CalcsRunner.shared.startNewCalculator()
