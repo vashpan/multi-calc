@@ -2,7 +2,7 @@
 
 ![Swift Version](https://img.shields.io/badge/swift-5.0-informational.svg) ![Version Badge](https://img.shields.io/github/release/vashpan/multi-calc.svg)
 
-A small macOS tool that allows to run multiple system Calculator apps. [Download recent version](https://github.com/vashpan/multi-calc/releases/download/1.0.0/MultiCalc.1.0.0.18.zip).
+A small macOS tool that allows to run multiple system Calculator apps. [Download recent version](https://github.com/vashpan/multi-calc/releases/download/1.0.1/MultiCalc-1.0.1.zip).
 
 ![Example Screenshot](https://github.com/vashpan/multi-calc/raw/master/Documentation/Example%20Screenshot.png)
 
